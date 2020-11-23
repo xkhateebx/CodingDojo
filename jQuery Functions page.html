@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" href="jq.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".add button").click(function() {
+                $('.add span').addClass('red');
+
+            });
+            $(".slidetoggle button").click(function() {
+                $('.slidetoggle img').slideToggle();
+
+            });
+            $(".append button").click(function() {
+                $('.append span').append(' <p> this is a new paragraph </p> ');
+
+            });
+            $(".click button").click(function() {
+                alert('this is alert');
+
+            });
+            $(".hide button").click(function() {
+                $('.hide span').hide();
+
+
+            });
+            $('.show span').hide();
+            $(".show button").click(function() {
+                $('.show span').show();
+
+
+            });
+
+            $(".toggle button").click(function() {
+                $('.toggle span').toggle();
+
+
+            });
+            $(".slideUpDown .slideDown").click(function() {
+                $('.slideUpDown img').slideDown();
+
+
+            });
+            $(".slideUpDown .slideUp").click(function() {
+                $('.slideUpDown img').slideUp();
+
+
+            });
+            $(".fadeInOut .fadeIn").click(function() {
+                $('.fadeInOut img').fadeIn();
+
+
+            });
+            $(".fadeInOut .fadeOut").click(function() {
+                $('.fadeInOut img').fadeOut();
+
+
+            });
+            $(".before button").click(function() {
+                $('.before span').before(' <p> this is text before paragraph </p> ');
+
+            });
+            $(".after button").click(function() {
+                $('.after span').after(' <p> this is text after paragraph </p> ');
+
+            });
+            $(".html button").click(function() {
+                $('.html span').html(' <p> this is the new paragraph! </p> ');
+
+            });
+            $(".attr button").click(function() {
+                var src = $('.attr img').attr('src');
+                $('.attr span').html(src);
+
+            });
+            $(".val button").click(function() {
+                var val = $('.val input').val();
+                $('.val span').html(val);
+
+            });
+            $(".text button").click(function() {
+                $('.text span').text(' <p> this is the new paragraph! </p> ');
+
+            });
+
+        });
+    </script>
+    <style>
+        .border {
+            border-top: 5px solid black;
+            width: 400px;
+        }
+        
+        div {
+            margin-bottom: 30px;
+        }
+        
+        .red {
+            color: red;
+        }
+        
+        img {
+            display: block;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <div class="add">
+        <h1>AddClass</h1>
+        <button>AddClass</button>
+        <span>Click The button to add class 'red' to this paragraph</span>
+    </div>
+    <div class="border"></div>
+    <div class="slidetoggle">
+        <h1>Slidetoggle</h1>
+        <button>Slidetoggle</button>
+        <span>Click The button to slidetoggle a hidden image</span>
+        <img src="dojo.png" alt="coding dojo logo">
+
+    </div>
+    <div class="border"></div>
+    <div class="click">
+        <h1>Click</h1>
+        <button>Click</button>
+        <span>Click The button to alert</span>
+    </div>
+    <div class="border"></div>
+    <div class="append">
+        <h1>Append</h1>
+        <button>Append</button>
+        <span>Click The button to append a new paragraph!</span>
+    </div>
+    <div class="border"></div>
+    <!--  -->
+    <div class="hide">
+        <h1>hide</h1>
+        <button>hide</button>
+        <span>Click The button to hide paragraph!</span>
+    </div>
+    <div class="border"></div>
+    <div class="show">
+        <h1>show</h1>
+        <button>show</button>
+        <span>Click The button to show paragraph!</span>
+    </div>
+    <div class="border"></div>
+    <div class="toggle">
+        <h1>toggle</h1>
+        <button>toggle</button>
+        <span>Click The button to toggle paragraph!</span>
+    </div>
+
+    <div class="border"></div>
+    <div class="slideUpDown">
+        <h1>slideDown/slideDown</h1>
+        <button class="slideDown">slideDown</button>
+        <button class="slideUp">slideUp</button>
+        <span>Click The button to slideDown img!</span>
+        <img src="dojo.png" alt="dojo logo">
+    </div>
+    <div class="border"></div>
+    <div class="fadeInOut">
+        <h1>fadeIn/fadeout</h1>
+        <button class="fadeIn">fadeIn</button>
+        <button class="fadeOut">fadeOut</button>
+        <span>Click The button to fadeInOut img!</span>
+        <img src="dojo.png" alt="dojo logo">
+    </div>
+    <div class="border"></div>
+    <div class="before">
+        <h1>before</h1>
+        <button>before</button>
+        <span>Click The button to add before paragraph!</span>
+    </div>
+    <div class="border"></div>
+    <div class="after">
+        <h1>after</h1>
+        <button>after</button>
+        <span>Click The button to write after paragraph!</span>
+    </div>
+    <div class="border"></div>
+    <div class="html">
+        <h1>html</h1>
+        <button>html</button>
+        <span>Click The button to view a new paragraph!</span>
+    </div>
+    <div class="border"></div>
+    <div class="attr">
+        <h1>attr</h1>
+        <button class="attr">attr</button>
+        <span>Click The button to show img url!</span>
+        <img src="dojo.png" alt="dojo logo">
+    </div>
+    <div class="border"></div>
+    <div class="val">
+        <h1>val</h1>
+        <input type="text">
+
+        <button>val</button>
+        <span>Click The button to show input value</span>
+    </div>
+    <div class="border"></div>
+    <div class="text">
+        <h1>text</h1>
+        <button>text</button>
+        <span>Click The button to view a new paragraph!</span>
+    </div>
+
+
+
+
+</body>
+
+
+</head>
+
+
+
+</html>
